@@ -43,7 +43,163 @@
 				<svg id="visualization" width="1000" height="500"></svg>
 				<!-- Latest version of D3.js -->
 				<script src="//d3js.org/d3.v4.min.js"></script>
+				<script>
+					function InitChart() {
+						/*** Carbon Monoxide data ***/
+						var carbonMonoxide = [{
+							"amount": "1.2",
+							"time": "00:00"
+						}, {
+							"amount": "1",
+							"time": "1:00"
+						}, {
+							"amount": "0.9",
+							"time": "2:00"
+						}, {
+							"amount": "0.6",
+							"time": "3:00"
+						}, {
+							"amount": "-200",
+							"time": "4:00"
+						}, {
+							"amount": "0.7",
+							"time": "5:00"
+						}, {
+							"amount": "0.7",
+							"time": "6:00"
+						}, {
+							"amount": "1.1",
+							"time": "7:00"
+						}, {
+							"amount": "2",
+							"time": "8:00"
+						}, {
+							"amount": "2.2",
+							"time": "9:00"
+						}, {
+							"amount": "1.7",
+							"time": "10:00"
+						}, {
+							"amount": "1.5",
+							"time": "11:00"
+						}, {
+							"amount": "1.6",
+							"time": "12:00"
+						}, {
+							"amount": "1.9",
+							"time": "13:00"
+						}, {
+							"amount": "2.9",
+							"time": "14:00"
+						}, {
+							"amount": "2.2",
+							"time": "15:00"
+						}, {
+							"amount": "2.2",
+							"time": "16:00"
+						}, {
+							"amount": "2.9",
+							"time": "17:00"
+						}, {
+							"amount": "4.8",
+							"time": "18:00"
+						}, {
+							"amount": "6.9",
+							"time": "19:00"
+						}, {
+							"amount": "6.1",
+							"time": "20:00"
+						}, {
+							"amount": "3.9",
+							"time": "21:00"
+						}, {
+							"amount": "1.5",
+							"time": "22:00"
+						}, {
+							"amount": "1.1",
+							"time": "23:00"
+						}
+						}];
 
+						/*** Nitrogen Dioxide data ***/
+						var nitrogenDioxide = [{
+							"amount": "77",
+							"time": "00:00"
+						}, {
+							"amount": "76",
+							"time": "1:00"
+						}, {
+							"amount": "60",
+							"time": "2:00"
+						}, {
+							"amount": "-200",
+							"time": "3:00"
+						}, {
+							"amount": "34",
+							"time": "4:00"
+						}, {
+							"amount": "28",
+							"time": "5:00"
+						}, {
+							"amount": "48",
+							"time": "6:00"
+						}, {
+							"amount": "82",
+							"time": "7:00"
+						}, {
+							"amount": "112",
+							"time": "8:00"
+						}, {
+							"amount": "101",
+							"time": "9:00"
+						}, {
+							"amount": "98",
+							"time": "10:00"
+						}, {
+							"amount": "92",
+							"time": "11:00"
+						}, {
+							"amount": "95",
+							"time": "12:00"
+						}, {
+							"amount": "112",
+							"time": "13:00"
+						}, {
+							"amount": "128",
+							"time": "14:00"
+						}, {
+							"amount": "126",
+							"time": "15:00"
+						}, {
+							"amount": "131",
+							"time": "16:00"
+						}, {
+							"amount": "135",
+							"time": "17:00"
+						}, {
+							"amount": "151",
+							"time": "18:00"
+						}, {
+							"amount": "172",
+							"time": "19:00"
+						}, {
+							"amount": "165",
+							"time": "20:00"
+						}, {
+							"amount": "136",
+							"time": "21:00"
+						}, {
+							"amount": "85",
+							"time": "22:00"
+						}, {
+							"amount": "53",
+							"time": "23:00"
+						}
+					}];
+
+
+					InitChart();
+				</script>
 			</div>
 		</div>
 	</body>
