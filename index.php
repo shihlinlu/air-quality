@@ -42,7 +42,7 @@
 			<div class="jumbotron">
 				<svg id="visualization" width="1000" height="500"></svg>
 				<!-- Latest version of D3.js -->
-				<script src="//d3js.org/d3.v4.min.js"></script>
+				<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 				<script>
 					function InitChart() {
 						/*** Carbon Monoxide data ***/
@@ -207,7 +207,18 @@
 								left: 50
 							},
 
+							xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([0,23),
 
+							yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([-200, 200]),
+
+							xAxis = d3.svg.axis()
+								.scale(xScale),
+							yAxis = d3.svg.axis()
+								.scale(yScale)
+								.orient("left");
+
+
+					}
 					InitChart();
 				</script>
 			</div>
