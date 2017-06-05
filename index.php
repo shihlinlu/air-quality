@@ -197,6 +197,16 @@
 						}
 					}];
 
+						var vis = d3.select("#visualisation"),
+							WIDTH = 1000,
+							HEIGHT = 500,
+							MARGINS = {
+								top: 20,
+								right: 20,
+								bottom: 20,
+								left: 50
+							},
+
 
 					InitChart();
 				</script>
