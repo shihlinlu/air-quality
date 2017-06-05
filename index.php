@@ -213,11 +213,42 @@
 
 							xAxis = d3.svg.axis()
 								.scale(xScale),
+
 							yAxis = d3.svg.axis()
 								.scale(yScale)
 								.orient("left");
 
 
+						vis.append("svg:g")
+							.attr("class", "x axis")
+							.attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
+							.call(xAxis);
+
+						vis.append("svg:g")
+							.attr("class", "y axis")
+							.attr("transform", "translate(" + (MARGINS.left) + ",0)")
+							.call(yAxis);
+
+						var lineGen = d3.svg.line()
+							.x(function(d) {
+								return xScale(d.time);
+							})
+							.y(function(d) {
+								return yScale(d.amount);
+							})
+							.interpolate("basis");
+
+						vis.append('svg:path')
+							.attr('d', lineGen(carbonMonoxide))
+							.attr('stroke', 'green')
+							.attr('stroke-width', 2)
+							.attr('fill', 'none');
+
+						vis.append('svg:path')
+							.attr('d', lineGen(nitrogenDioxide))
+							.attr('stroke', 'blue')
+							.attr('stroke-width', 2)
+							.attr('fill', 'none');
 					}
 					InitChart();
 				</script>
